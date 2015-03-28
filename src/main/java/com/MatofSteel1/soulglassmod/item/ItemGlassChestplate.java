@@ -8,6 +8,8 @@ import net.minecraft.item.ItemStack;
 
 public class ItemGlassChestplate extends ItemArmor {
 
+    public String textureName;
+
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
     {
@@ -15,8 +17,6 @@ public class ItemGlassChestplate extends ItemArmor {
                 //+ "_" + (this.armorType == 2 ? "2" : "1")
                 + ".png";
     }
-
-    public String textureName;
 
     public ItemGlassChestplate(ArmorMaterial SOULPLATING){
         super(SOULPLATING, 0, 1);
